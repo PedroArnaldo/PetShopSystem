@@ -6,7 +6,7 @@ package com.mycompany.petshoplogin;
 
 /**
  *
- * @author thewo
+ * @author Pedro Lopes
  */
 public class Main {
     public static void main(String args[]) {
