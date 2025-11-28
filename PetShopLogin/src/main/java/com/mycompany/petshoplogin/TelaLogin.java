@@ -3,6 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.petshoplogin;
+
+import com.mycompany.petshoplogin.Services.LoginService;
+
 /**
  *
  * @author Vinícius
@@ -146,7 +149,7 @@ public class TelaLogin extends javax.swing.JFrame {
             this.dispose();
      
             java.awt.EventQueue.invokeLater(() -> {
-                new PetShopSistema().setVisible(true);
+                new MenuPrincipal().setVisible(true);
             });
         } else {
             javax.swing.JOptionPane.showMessageDialog(this, "Usuário ou senha incorretos!");

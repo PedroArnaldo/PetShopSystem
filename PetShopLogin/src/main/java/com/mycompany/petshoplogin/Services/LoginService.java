@@ -1,4 +1,4 @@
-package com.mycompany.petshoplogin;
+package com.mycompany.petshoplogin.Services;
 
 import java.io.BufferedReader;
 import java.io.File;
