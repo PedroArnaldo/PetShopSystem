@@ -244,27 +244,16 @@ public class CadastroClienteDialog extends javax.swing.JDialog {
         String EnderecoCliente = txtEndereco.getText();
 
         Object[] novoCliente;
+        
+        novoCliente = new Object[]{
+            codigoCliente,
+            NomeCliente,
+            cpfCliente,
+            TelefoneCliente,
+            EnderecoCliente
+        };
+        clienteRepository.add(novoCliente);
 
-        if (isEdicao != null) {
-            novoCliente = clienteRepository.get(isEdicao);
-            
-            novoCliente[0] = codigoCliente;
-            novoCliente[1] = cpfCliente;
-            novoCliente[2] = NomeCliente;
-            novoCliente[3] = TelefoneCliente;
-            novoCliente[4] = EnderecoCliente;
-            isEdicao = null;
-            
-        } else {
-            novoCliente = new Object[]{
-                codigoCliente,
-                NomeCliente,
-                cpfCliente,
-                TelefoneCliente,
-                EnderecoCliente
-            };
-            clienteRepository.add(novoCliente);
-        }
 
         DefaultTableModel dtm_cliente = (DefaultTableModel) tabelaCliente.getModel();
         dtm_cliente.addRow(novoCliente);

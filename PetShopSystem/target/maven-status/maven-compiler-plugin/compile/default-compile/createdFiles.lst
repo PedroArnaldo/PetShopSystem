@@ -6,7 +6,10 @@ com\mycompany\petshoplogin\MenuPrincipal.class
 com\mycompany\petshoplogin\TelaLogin$1.class
 com\mycompany\petshoplogin\Services\LoginService.class
 com\mycompany\petshoplogin\CadastroClienteDialog$3.class
+com\mycompany\petshoplogin\CadastroPetDialog$2.class
+com\mycompany\petshoplogin\CadastroPetDialog$1.class
 com\mycompany\petshoplogin\CadastroClienteDialog$2.class
 com\mycompany\petshoplogin\CadastroClienteDialog$1.class
+com\mycompany\petshoplogin\CadastroPetDialog.class
 com\mycompany\petshoplogin\TelaLogin$2.class
 com\mycompany\petshoplogin\CadastroClienteDialog.class

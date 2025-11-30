@@ -117,6 +117,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void btnAnimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnimalActionPerformed
         // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> {
+            new CadastroPetDialog().setVisible(true);
+        });
     }//GEN-LAST:event_btnAnimalActionPerformed
 
     private void btnServicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnServicosActionPerformed
