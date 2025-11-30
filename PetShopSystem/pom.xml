@@ -11,4 +11,5 @@
         <maven.compiler.target>21</maven.compiler.target>
         <exec.mainClass>com.mycompany.petshoplogin.PetShopLogin</exec.mainClass>
     </properties>
+    <name>PetShopSystem</name>
 </project>
