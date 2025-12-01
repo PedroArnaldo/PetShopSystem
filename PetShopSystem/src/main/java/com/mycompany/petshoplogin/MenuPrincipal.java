@@ -56,6 +56,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         btnServicos.addActionListener(this::btnServicosActionPerformed);
 
         btnProduto.setText("Cadastrar Produto");
+        btnProduto.addActionListener(this::btnProdutoActionPerformed);
 
         btnSobre.setText("Sobre");
         btnSobre.addActionListener(this::btnSobreActionPerformed);
@@ -75,8 +76,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(144, 144, 144)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnSobre, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnProduto, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSobre, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnServicos, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnAnimal, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -95,9 +96,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(btnAnimal)
                 .addGap(18, 18, 18)
-                .addComponent(btnServicos)
-                .addGap(18, 18, 18)
                 .addComponent(btnProduto)
+                .addGap(18, 18, 18)
+                .addComponent(btnServicos)
                 .addGap(18, 18, 18)
                 .addComponent(btnSobre)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
@@ -124,6 +125,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
     private void btnServicosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnServicosActionPerformed
         // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> {
+            new CadastroServicoDialog().setVisible(true);
+        });
     }//GEN-LAST:event_btnServicosActionPerformed
 
     private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
@@ -157,6 +161,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
               Matrícula: 1250107388
 
             Disciplina: Programação Orientada a Objetos
+            Nome do professor orientador: Lázaro Pereira de Oliveira
             Ano: 2025
 
             Projeto acadêmico completo com login, menu principal
@@ -167,6 +172,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
     JOptionPane.showMessageDialog(this, mensagem, "Sobre o PetShop System", 
         JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_btnSobreActionPerformed
+
+    private void btnProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProdutoActionPerformed
+        // TODO add your handling code here:
+        java.awt.EventQueue.invokeLater(() -> {
+            new CadastroProdutoDialog().setVisible(true);
+        });
+    }//GEN-LAST:event_btnProdutoActionPerformed
 
     /**
      * @param args the command line arguments

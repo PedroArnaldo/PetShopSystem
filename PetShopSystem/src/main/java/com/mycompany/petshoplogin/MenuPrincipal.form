@@ -31,8 +31,8 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="144" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="btnSobre" min="-2" pref="167" max="-2" attributes="0"/>
                   <Component id="btnProduto" min="-2" pref="167" max="-2" attributes="0"/>
+                  <Component id="btnSobre" min="-2" pref="167" max="-2" attributes="0"/>
                   <Component id="btnServicos" min="-2" pref="167" max="-2" attributes="0"/>
                   <Component id="btnAnimal" min="-2" pref="167" max="-2" attributes="0"/>
                   <Component id="btnCliente" min="-2" pref="167" max="-2" attributes="0"/>
@@ -55,9 +55,9 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btnAnimal" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-              <Component id="btnServicos" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btnProduto" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btnServicos" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btnSobre" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="32" max="32767" attributes="0"/>
@@ -103,6 +103,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Cadastrar Produto"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnProdutoActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnSobre">
       <Properties>
